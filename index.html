@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <p id="logo">Vardan Sargsyan</p>
+                <ul>
+                    <li><span class="active">Home</span></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Home</h1>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <p>Welcome to Vardan Sargsyan's SI539 website, your go-to destination for all things pets, recipes, and
+                travel! Explore a world of captivating content where we cater to your love for furry companions,
+                culinary delights, and globetrotting adventures. </p>
+
+            <img class="header-img" src="images/home-image.jpg" alt="Abstract overlapping wave patern.">
+        </div>
+
+        <div class="container">
+            <h2>Explore this Website</h2>
+        </div>
+
+        <div id="img-nav" class="container">
+            <div class="nav-item" onmouseover="changeBackgroundColor('#f5f5f5')" onmouseout="resetBackgroundColor()">
+                <h3>Pets</h3>
+                <img src="images/nav-pets.jpg" alt="A cat sitting on a pillow">
+            </div>
+            <div class="nav-item" onmouseover="changeBackgroundColor('#f8d7da')" onmouseout="resetBackgroundColor()">
+                <h3>Recipes</h3>
+                <img src="images/nav-recipe.jpg" alt="An east-asian meal in a bowl">
+            </div>
+            <div class="nav-item" onmouseover="changeBackgroundColor('#d4edda')" onmouseout="resetBackgroundColor()">
+                <h3>Travel</h3>
+                <img src="images/nav-travel.jpg" alt="A sunset with a tree in the foreground">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.transition = 'background-color 0.5s ease';
+            document.body.style.backgroundColor = color;
+        }
+
+        function resetBackgroundColor() {
+            document.body.style.transition = 'background-color 0.5s ease';
+            document.body.style.backgroundColor = '';
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>Vardan Sargsyan 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
